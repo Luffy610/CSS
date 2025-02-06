@@ -1,0 +1,170 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-right-item{
+    list-style-type: none;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    padding: 16px;
+}
+
+.nav-right-item:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.logo{
+    letter-spacing: 4px;
+    padding: 16px;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;  
+}
+
+.nav-right-items{
+    display: flex;
+}
+
+.nav-pop-close{
+    padding: 16px;
+}
+
+.nav-pop-item{
+    padding: 8px 16px;
+}
+
+.nav-bar-pop{
+    background-color: #000;
+    color: #ccc;
+    width: 200px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    display: block;
+    z-index: 1;
+    animation: animateleft 0.5s ease 0s 1 normal none;
+}
+
+@keyframes animateleft {
+    0%{
+        left: -300px;
+        opacity: 0;
+    }
+
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+    
+}
+
+.hide, .burger-menu{
+    display: none;
+}
+
+.nav-pop-close:hover, .nav-pop-item:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
+.center-intro{
+    padding: 48px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0, -50%);
+}
+
+
+.heading-1{
+    font-size: 64px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.heading-2{
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+
+.intro-in-button{
+    font-size: 18px;
+    padding: 12px 24px;
+    margin-top: 16px;
+    line-height: 1.8;
+    opacity: 0.7;
+    user-select: none;
+}
+
+.intro-in-button:hover{
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+    opacity: 1;
+    outline-width: 0;
+}
+
+.icon-box{
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    padding: 24px 48px;
+    font-size: 18px;
+}
+
+.sm{
+    color: #757575;
+}
+
+.intro{
+    background-image: url(mac.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 92.2vh;
+    filter: grayscale(50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    
+
+    .nav-right-item{
+        display: none;
+    }
+
+    .burger-menu{
+        display: block;
+        padding: 16px;
+    }
+
+    .burger-menu:hover{
+        color: #000;
+        background-color: #ccc;
+        cursor: pointer;
+    }
+}
