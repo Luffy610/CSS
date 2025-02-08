@@ -29,6 +29,12 @@
 .nav-bar{
     display: flex;
     justify-content: space-between;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
 }
 
 .nav-right-items{
@@ -52,7 +58,7 @@
     top: 0;
     position: fixed;
     display: block;
-    z-index: 1;
+    z-index: 1001;
     animation: animateleft 0.5s ease 0s 1 normal none;
 }
 
@@ -134,9 +140,54 @@
     background-image: url(mac.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 92.2vh;
+    min-height: 100vh;
     filter: grayscale(50%);
 }
+
+.atc-container{
+    padding: 128px 16px;
+    line-height: 1.8;
+    font-size: 15px;
+    min-height: 100vh;
+    font-weight: bold;
+}
+
+.atc-heading1{
+    text-align: center;
+    font-weight: 500;
+    margin: 10px;
+    font-size: 24px;
+    line-height: 1.8;
+}
+
+.atc-heading2{
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+    font-weight: 450;
+}
+
+.atc-feature{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.feature-icon{
+    margin: 16px;
+    text-align: center;
+    font-size: 64px;
+
+}
+
+.feature-heading{
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+    font-weight: 500;
+}
+
+
 
 
 
@@ -166,5 +217,9 @@
         color: #000;
         background-color: #ccc;
         cursor: pointer;
+    }
+
+    .atc-feature{
+        width: 100%;
     }
 }
