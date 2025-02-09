@@ -319,6 +319,30 @@
     margin-bottom: 15px;
 }
 
+.our-work-container{
+    padding: 128px 16px;
+}
+.work-heading{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.work-sub-heading{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 64px;
+}
+
+.work-image{
+    width: 100%;
+    text-align: center;
+    width: 25%;
+    float: left;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
 
 
 
@@ -365,10 +389,17 @@
     .stats-container{
         display: block;
     }
+    .work-image{
+        width: 100%;
+    }
 }
 
 @media screen and (min-width:600px) and (max-width: 900px){
     .card{
+        width: 50%;
+    }
+
+    .work-image{
         width: 50%;
     }
 }
